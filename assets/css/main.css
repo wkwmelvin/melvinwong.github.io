@@ -1239,10 +1239,12 @@ input[type="radio"] + label:before {
       width: 100%; }
   .image.main {
     display: block;
-    margin: 0 0 3em 0;
-    width: 100%; }
+    /*margin: 0 0 3em 0;*/
+    margin-left: 30em;
+    /*margin-right: 30em;*/
+    width: 90%; }
     .image.main img {
-      width: 100%; }
+      width: 90%; }
 
 a.image {
   overflow: hidden; }
