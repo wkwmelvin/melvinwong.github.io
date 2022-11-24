@@ -51,8 +51,10 @@
 									<h2>Data Overview</h2>
 									<p align = 'justify'>The dataset is in tabular format and consists of 52 feature columns. These features include information such as researcher's contact address, city, country, university/institution, contact name, experimental protocols and sample description. Among these features, 4 free text data fields are identified as being related to the control status label.</p>
 									<span class="image main"><img src='images/article_01_data.jpg' /></span>
+									<p align = 'justify'><font size = '3'>These 4 free text features are then combined into a single feature and text cleaning was performed:</font></p>
+									<span class="image main"><img src='images/article_01_cleaned.png' /></span>
+									
 									<hr class="major" />
-
 									
 									<h2>Main Strategy: Domain knowledge-based Feature Engineering</h2>
 									<p align = 'justify'><font size = '3'>As the number of labeled samples is low, this makes more complex models such as deep learning infeasible as they required large amounts of training data so as to not overfit. There are a few approaches to tackling such a problem. The first is to use semi-supervised learning methods such as pseudo labeling. In pseudo labeling, confident predictions obtained from the test set that are above a certain preset threshold are added as pseudo labeled samples for the model to be retrained. Pseudo labeling has been used in multiple winning solutions of Kaggle competitions. Another approach known as the data centric approach, focuses more on the quality of the data. This is in contrast to a model centric approach which focuses on complex models and hyperparameters tuning. As the competition is relatively short in duration (only about 5 days) and the labeled dataset being small, I decided to take the data centric approach and rely on careful data and feature selection, along with domain knowledge-based feature engineering.</font></p>
