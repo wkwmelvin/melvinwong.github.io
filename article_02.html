@@ -59,15 +59,36 @@
 
 									<h2>Simple MLOps Pipeline</h2>
 									<span class="image main"><img src='images/article_02_workflow.png' /></span>
-									<p align = 'justify'><font size = '3'>The pipeline is split into 2 separate sections. First is a simple CI/CD pipeline (in green) that is triggered by a push commit. Note that CI/CD pipelines are usually more elaborate than this and include merge triggers and testing before deploying to a production environment. The second is a MLOps pipeline (in blue) that is triggered when a new model (.pkl file) is pushed to the repository. The pipeline conducts a simple test on some test data to ensure improved model performance before triggering the first pipeline to deploy with the latest model. Again, this is just a simple MLOps pipeline to try out Github Actions. Actual MLOps pipeline will include other components such as collaboration platform for data scientists and proper tracking of models and hyperparameters.</font></p>
+									<p align = 'justify'><font size = '3'>The pipeline is split into 2 separate sections. First is a simple CI/CD pipeline (in green) that is triggered by a push commit. Note that CI/CD pipelines are usually more elaborate than this and include merge triggers and testing before deploying to a production environment. The second is a MLOps pipeline (in blue) that is triggered when a new model (.pkl file) is pushed to the repository. The pipeline conducts a simple test on some test data to ensure improved model performance before triggering the first pipeline to deploy with the latest model. Again, this is just a simple MLOps pipeline to try out Github Actions. Actual MLOps pipeline will include other components such as collaboration platform for data scientists, data warehouse and proper tracking of models and hyperparameters.</font></p>
+									
+									<hr class="major" />
+
+									<h2>Components Involved</h2>
+									
+									<h3>Github Actions Pipeline Workflow Files</h3>
+									<ul>
+										<li>deploy.yml - YAML file to specify deployment workflow</li>
+										<li>ml_test.yml YAML file to specify machine learning model testing workflow</li>
+									</ul>
+									
+									<h3>Files For Web Application</h3>
+									<ul>
+										<li>index.html, confirmation.html - Simple user interface pages</li>
+										<li>app.py - Python Flask backend</li>
+										<li>model.pkl - Trained machine learning model</li>
+									</ul>
+									
+									<h3>Files For Testing New Model</h3>
+									<ul>
+										<li>test.py - Python script for testing the model</li>
+										<li>data.csv - Test data</li>
+										<li>ml_metric.txt - Simple text file to store the current best model's performance score</li>
+									</ul>
 									
 									<h3>Docker</h3>
-									<p align = 'justify'><font size = '3'>Lorem ipsum.</font></p>
+									<p align = 'justify'><font size = '3'>A docker file is included </font></p>
 									
 									<h3>Azure App Service</h3>
-									<p align = 'justify'><font size = '3'>Lorem ipsum.</font></p>
-									
-									<h3>Github Actions CI/CD Pipeline</h3>
 									<p align = 'justify'><font size = '3'>Lorem ipsum.</font></p>
 									
 									<hr class="major" />
