@@ -65,11 +65,14 @@
 
 									<h2>Components Involved</h2>
 									
-									<h3>Github Actions Pipeline Workflow Files</h3>
+									<h3>Github Actions Workflow Pipeline Files</h3>
+									<p align = 'justify'><font size = '3'>In Github Actions, workflow pipelines are defined in <i>.yml</i> files: </font></p>
 									<ul>
 										<li><font size = '3'><i>deploy.yml</i> - YAML file to specify deployment workflow</font></li>
 										<li><font size = '3'><i>ml_test.yml</i> YAML file to specify machine learning model testing workflow</font></li>
 									</ul>
+									
+									<p align = 'justify'><font size = '3'>Workflow pipelines for different purposes can be defined in individual <i>.yml</i> files. Github Actions also has the functionality to trigger and run another workflow from within a pipeline run. This will be useful in integrating individual MLOps and DevOps specific workflows.</font></p>
 									
 									<h3>Files For Web Application</h3>
 									<ul>
@@ -78,12 +81,16 @@
 										<li><font size = '3'><i>model.pkl</i> - Trained machine learning model</font></li>
 									</ul>
 									
+									<p align = 'justify'><font size = '3'>These are the files that make up a simple web application for the example use case scenario. It consists of a couple of simple <i>.html</i> files as fontend user interface, a <i>.py</i> file for the Python Flask backend, and a <i>.pkl</i> machine learning model pickle file.</font></p>
+									
 									<h3>Files For Testing New Model</h3>
 									<ul>
 										<li><font size = '3'><i>test.py</i> - Python script for testing the model</font></li>
 										<li><font size = '3'><i>data.csv</i> - Test data</font></li>
 										<li><font size = '3'><i>ml_metric.txt</i> - Simple text file to store the current best model's performance score</font></li>
 									</ul>
+									
+									<p align = 'justify'><font size = '3'>As part of the MLOps testing workflow, these files will enable model performance testing via Python using some test data. The best performing model scores are stored in a <i>.txt</i> file to be used as model performance comparsion in future workflow runs.</font></p>
 									
 									<h3>Docker</h3>
 									<p align = 'justify'><font size = '3'>Included in the respository is a docker file, which is a simple text file that contains the blueprint for creating a docker image. This will enable the web applicatioon to be deployed as a container.</font></p>
